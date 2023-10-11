@@ -1,0 +1,19 @@
+name: CI
+on:
+  pull_request:
+    branches: ['main', 'develop']
+jobs:
+  eslint:
+    name: Linting check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+          cache: 'yarn'
+      - name: Install packages
+        run: yarn
+      - name: Run ESLint
+        run: yarn lint
