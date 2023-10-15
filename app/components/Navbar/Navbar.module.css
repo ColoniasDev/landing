@@ -1,0 +1,147 @@
+.containernav {
+    margin-top: 0;
+    padding-right: 100px;
+}
+
+
+.navbarcontainer {
+    height: 80px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 10px 2px rgb(0, 0, 0);
+    padding-right: 12%;
+    padding-left: 2%;
+}
+
+@media (min-width: 700px) {
+    .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+
+}
+
+.link {
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10%;
+    color: #ffffff;
+    font-size: medium;
+    font-weight: 600;
+}
+.link:hover {
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 10%;
+    min-width: max-content;
+    color: rgb(240, 162, 2);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.primarybutton {
+    border: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    width: max-content;
+    font-size: 16px;
+    line-height: 19px;
+    height: 48px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(13, 14, 15);
+    border-color: rgb(240, 162, 2);
+    background-color: rgb(240, 162, 2);
+}
+
+.primarybutton:hover {
+    border: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    width: max-content;
+    font-size: 16px;
+    line-height: 19px;
+    height: 48px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-color: rgba(240, 161, 2, 0.278);
+    background-color: rgba(240, 161, 2, 0.342);
+}
+.navigation {
+    display: none;
+}
+
+}
+
+@media (max-width: 699px) {
+    .links {
+    display: none;
+}
+
+.link {
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-width: max-content;
+    color: rgb(240, 162, 2);
+    font-size: medium;
+    font-weight: 600;
+}
+.link:hover {
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    min-width: max-content;
+    color: rgb(240, 162, 2);
+    font-size: medium;
+    font-weight: 600;
+}
+
+.primarybutton {
+display: none;
+}
+
+.primarybutton:hover {
+    border: 0px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 600;
+    width: max-content;
+    font-size: 16px;
+    line-height: 19px;
+    height: 48px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+    border-color: #3538c1;
+    background-color: #3538c1;
+}
+
+.navigation {
+    font-size: 200%;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+}
